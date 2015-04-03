@@ -6,3 +6,10 @@ Based on [tutum/lamp](https://registry.hub.docker.com/u/tutum/lamp/) with php5-g
 - imagemagick
 - graphicsmagick
 
+Additional changes performed, changed following PHP Configurations to following new values:
+
+- php_upload_max_filesize: 32M
+- php_post_max_size: 32M
+- max_execution_time: 300 (seconds)
+- max_input_time: 120 (seconds)
+- memory_limit: 32M
