@@ -17,5 +17,9 @@ RUN sed -ri -e "s/^max_execution_time.*/max_execution_time = 300/" \
     		-e "s/^max_input_time.*/max_input_time = 120/" \
     		-e "s/^memory_limit.*/memory_limit = 128M/" /etc/php5/apache2/php.ini
 
+# config to enable .htaccess
+ADD apache_default /etc/apache2/sites-available/000-default.conf
+RUN a2enmod rewrite
+
 EXPOSE 80 3306
 CMD ["/run.sh"]

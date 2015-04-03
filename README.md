@@ -13,3 +13,7 @@ Additional changes performed, changed following PHP Configurations to following 
 - max_execution_time: 300 (seconds)
 - max_input_time: 120 (seconds)
 - memory_limit: 128M
+
+Changes in Apache:
+
+- .htaccess: AllowOverride set to All
