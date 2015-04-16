@@ -3,9 +3,8 @@ MAINTAINER Peter Grman <peter.grman@grman.at>
 
 RUN apt-get update && \
   	apt-get -y install php5-gd php5-imagick php5-mcrypt php5-imap php5-memcache php5-curl \
-                       imagemagick graphicsmagick
-
-RUN php5enmod php5-gd php5-imagick php5-mcrypt php5-imap php5-memcache php5-curl
+                       imagemagick graphicsmagick && \
+    php5enmod php5-gd php5-imagick php5-mcrypt php5-imap php5-memcache php5-curl
 
 #Enviornment variables to configure php
 ENV PHP_UPLOAD_MAX_FILESIZE 64M
