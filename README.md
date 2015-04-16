@@ -9,9 +9,9 @@ Based on [tutum/lamp](https://registry.hub.docker.com/u/tutum/lamp/) with additi
 - php5-mcrypt
 - php5-imap
 - php5-memcache
+- php5-curl
 - imagemagick
 - graphicsmagick
-- curl
 
 ## Additional changes performed, changed following PHP Configurations to following new values:
 
